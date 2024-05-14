@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Salarbutt-Portfolio/static/css/main.3cf4b8eb.css",
+    "main.js": "/Salarbutt-Portfolio/static/js/main.af9ae69d.js",
+    "static/js/787.69672a30.chunk.js": "/Salarbutt-Portfolio/static/js/787.69672a30.chunk.js",
+    "static/media/music2.mp3": "/Salarbutt-Portfolio/static/media/music2.3d873c960840b9310d88.mp3",
+    "static/media/MuhammadSalarButtResume.pdf": "/Salarbutt-Portfolio/static/media/MuhammadSalarButtResume.2a63e53c78685b4db9f2.pdf",
+    "static/media/img1.jpg": "/Salarbutt-Portfolio/static/media/img1.65725357f0a16f430fc6.jpg",
+    "static/media/helvetica-neu.ttf": "/Salarbutt-Portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff": "/Salarbutt-Portfolio/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/LaBelleAurore.woff2": "/Salarbutt-Portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo-s.png": "/Salarbutt-Portfolio/static/media/logo-s.bfc9f81846bda5218dab.png",
+    "static/media/CoolveticaRg-Regular.woff": "/Salarbutt-Portfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/Salarbutt-Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/Salarbutt-Portfolio/index.html",
+    "main.3cf4b8eb.css.map": "/Salarbutt-Portfolio/static/css/main.3cf4b8eb.css.map",
+    "main.af9ae69d.js.map": "/Salarbutt-Portfolio/static/js/main.af9ae69d.js.map",
+    "787.69672a30.chunk.js.map": "/Salarbutt-Portfolio/static/js/787.69672a30.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cf4b8eb.css",
+    "static/js/main.af9ae69d.js"
+  ]
+}
