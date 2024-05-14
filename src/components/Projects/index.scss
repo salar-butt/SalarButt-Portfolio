@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+.projects-page {
+  .text-zone {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-family: 'Coolvetica';
+    color: #ffd700;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -10px;
+      left: -40px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+
+    &::after {
+      content: '</h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 20px;
+      right: -50px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  hr {
+    width: 50vw;
+    border-color: #ebde98;
+    border-top: none;
+  }
+
+  .projects-grid {
+    box-sizing: border-box;
+    width: 95%;
+    height: 95%;
+    padding: 0 50px;
+    margin-left: 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    overflow: auto;
+
+    .project {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      &Details {
+        box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        transform: translateY(200px);
+        padding: 5px 20px;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
+          0 -10px 10px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.25s ease-in-out;
+
+        a {
+          font-family: 'MuseoModerno', cursive;
+          font-size: 20px;
+          font-weight: bold;
+          color: #ff6701;
+
+          &:hover {
+            color: rgb(48, 56, 180);
+          }
+        }
+
+        p {
+          font-weight: bold;
+          font-size: 14px;
+
+          &.white {
+            color: #000;
+          }
+
+          &.black {
+            color: #fff;
+          }
+        }
+      }
+
+      &:hover {
+        .projectDetails {
+          transform: translateY(0px);
+        }
+      }
+    }
+
+    .projects_bottom {
+      color: #ffd700;
+      font-family: 'Coolvetica';
+      grid-column: span 2;
+      justify-self: center;
+      align-self: center;
+      font-weight: 400;
+      position: relative;
+
+      &:before {
+        content: '<h2>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -40px;
+        opacity: 0.6;
+      }
+
+      &:after {
+        content: '<h2/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 18px;
+        position: absolute;
+        bottom: -10px;
+        right: -50px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width:900px) {
+
+  .projects-page {
+
+    .text-zone {
+      margin-left: 10%;
+
+      h1 {
+        font-size: 6vw !important;
+        margin-left: 80px !important;
+      }
+    }
+  }
+
+  .container {
+    .projects-grid {
+      grid-template-columns: repeat(1, 100%);
+      width: 100%;
+      height: 95%;
+      padding: 0 0 0 30px;
+      margin-left: 55px;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .projects_bottom {
+        left: 20px;
+      }
+    }
+  }
+}
