@@ -1,11 +1,12 @@
 import Loader from 'react-loaders'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AnimatedLetters from '../AnimatedLetters'
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone, faPrint } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 // import { faPrint } from '@fortawesome/free-solid-svg-icons/faPrint'
 import ResumePDF from './../../assets/MuhammadSalarButtResume.pdf'
+import './index.scss'
 
 function Resume() {
   console.log(ResumePDF, 'testingggg')
@@ -28,17 +29,16 @@ function Resume() {
                 in crafting intuitive designs and ready to collaborate on
                 groundbreaking ventures. Contact me for inquiries.
               </p>
-              <div></div>
 
-              <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
-                <p className="heading">
+              <a href={ResumePDF} target="_blank" rel="noopener noreferrer" className="alpjaa">
+                <p className="border">
                   Want to see resume click on this icon:
-                  <faPrint className="iconi" />
+                  <FontAwesomeIcon icon={faPrint} className="iconi" />
                 </p>
               </a>
             </div>
 
-            <div className="contactInfo">
+            <div className="contactInfo ">
               <h1>
                 <AnimatedLetters
                   letterClass={'text-animate'}

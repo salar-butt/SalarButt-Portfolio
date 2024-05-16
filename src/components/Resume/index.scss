@@ -1,0 +1,29 @@
+.container {
+    .text-zone {
+      .contact-text-zone {
+        .topPart {
+          // Ensure it doesn't interfere with absolute positioning
+            
+          
+          @media screen and (min-width: 290px) and (max-width: 610px) {
+            .alpjaa {
+              position: absolute; 
+          top: 42%;
+          }
+        }
+        @media screen and (min-width: 611px) and (max-width: 900px) {
+          .alpjaa {
+            position: absolute; 
+        top: 33%;
+        }
+      }
+      .alpjaa,.border:hover{
+text-decoration: underline;
+color: rgb(147, 147, 248);
+      }
+      
+        }
+      }
+    }
+  }
+  

@@ -22,6 +22,27 @@
     .topPart {
       margin-bottom: 40px;
     }
+    
+@media screen and (min-width: 300px) and (max-width: 619px) {
+  .contact-form {
+display: none;
+  }
+  .contactInfo{
+    // margin-top: 200px;
+    position: absolute;
+    top:75%;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 920px) {
+  .contact-form {
+display: none;
+  }
+  .contactInfo{
+    // margin-top: 200px;
+    position: absolute;
+    top:60%;
+  }
+}
 
     h1 {
       font-size: 53px;

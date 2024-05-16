@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="container contact-page">
         <div className="text-zone">
           <div className="contact-text-zone">
-            <div className="topPart">
+            <div className="topPart ">
               <h1>
                 <AnimatedLetters
                   letterClass={'text-animate'}
@@ -19,7 +19,7 @@ const Contact = () => {
                   idx={15}
                 />
               </h1>
-              <p>
+              <p className=''>
                 As a seasoned frontend developer, I'm eager to tackle freelance
                 opportunities, especially ambitious projects. With a focus on
                 crafting intuitive user interfaces, I excel in delivering
@@ -65,8 +65,8 @@ const Contact = () => {
                 <FontAwesomeIcon icon={faEnvelope} color="#e7ab0a" />
                 <a
                   className="text-[5vw] md:text-2xl moveee"
-                  href="salarbutt321@gmail.com"
-                  target="blank"
+                  href="mailto:salarbutt321@gmail.com"
+                  target="_blank"
                 >
                   salarbutt321@gmail.com
                 </a>
@@ -76,7 +76,7 @@ const Contact = () => {
                 <a
                   className="text-[5vw] md:text-2xl moveee"
                   href="https://www.linkedin.com/in/salar-butt/"
-                  target="blank"
+                  target="_blank"
                 >
                   https://www.linkedin.com/in/salar-butt/
                 </a>
@@ -86,7 +86,7 @@ const Contact = () => {
                 <a
                   className="text-[5vw] md:text-2xl moveee"
                   href="https://github.com/salar-butt"
-                  target="blank"
+                  target="_blank"
                 >
                   https://github.com/salar-butt
                 </a>
@@ -94,28 +94,27 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-form">
-         <form action='https://formsubmit.co/el/confirm/9a9232895110b73b721f89de43706797' method='POST'>
-  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
-  <input type="hidden" name="_subject" value="New submission from your website!" />
-  <ul>
-    <li className="half">
-      <input placeholder="Name" type="text" name="name" required />
-    </li>
-    <li className="half">
-      <input placeholder="Email" type="email" name="email" required />
-    </li>
-    <li>
-      <input placeholder="Subject" type="text" name="subject" required />
-    </li>
-    <li>
-      <textarea placeholder="Message" name="message" required></textarea>
-    </li>
-    <li>
-      <button type="submit" className="flat-button">Send</button>
-    </li>
-  </ul>
-</form>
-
+            <form action='https://formsubmit.co/el/confirm/9a9232895110b73b721f89de43706797' method='POST'>
+              <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+              <input type="hidden" name="_subject" value="New submission from your website!" />
+              <ul>
+                <li className="half">
+                  <input placeholder="Name" type="text" name="name" required />
+                </li>
+                <li className="half">
+                  <input placeholder="Email" type="email" name="email" required />
+                </li>
+                <li>
+                  <input placeholder="Subject" type="text" name="subject" required />
+                </li>
+                <li>
+                  <textarea placeholder="Message" name="message" required></textarea>
+                </li>
+                <li>
+                  <button type="submit" className="flat-button">Send</button>
+                </li>
+              </ul>
+            </form>
           </div>
         </div>
       </div>
